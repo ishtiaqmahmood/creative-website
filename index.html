@@ -1,48 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- important meta tags -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Creative Website</title>
+    <!-- important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon/favicon.ico">
-	
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <title>Creative Website</title>
 
-	<!-- FontAwesome-->
-	<!--<link rel="stylesheet" type="text/css" href="css/font-awesome/css/fontawesome.min.css"> -->
-	<script src="https://kit.fontawesome.com/a891f3e157.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet"  href="css/bootstrap/bootstrap.css"> 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <!-- FontAwesome-->
+    <script src="https://kit.fontawesome.com/a891f3e157.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<!-- Example Markup-->
-	<h1>Hello</h1>
-	<h3>Bootstrap grid system</h3>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
 
-	<i class="fa fa-laptop fa-4x"></i>
-	<i class="fab fa-accessible-icon fa-5x"></i>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/logo/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-	<!-- JQuery -->	
-	<script src="js/jquery.js"></script>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<!-- Bootstrap JS -->	
-	<script src="js/bootstrap/bootstrap.js"></script>
+    <!-- Home -->
+    <section id="home">
+        <div id="home-cover" class="bg-parallax">
+            <div id="home-content-box">
+                <div id="home-content-box-inner" class="text-center">
+                    <div id="home-heading">
+                        <h3>Watch Out <br> The Creative Way</h3>
+                    </div>
+                    <div id="home-btn">
+                        <a class="btn btn-lg btn-general btn-white" href="#about" title="View Our Work" role="button">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Custom JS -->	
-	<script src="js/script.js"></script>
+    <!-- About -->
+    <section id="about">
+        <!-- About Right Side with bg image -->
+        <div id="about-bg-diagonal" class="bg-parallax"></div>
+
+        <!-- About Left Side with content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="about-content-box">
+                        <div id="about-content-box-inner">
+                            <div class="vertical-heading">
+                                <h5>Who We Are</h5>
+                                <h2>A <strong>Story</strong><br>Behind Us</h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi, saepe hic esse maxime laboriosam, nam ratione natus aliquid iusto rem. Atque, minima unde natus sapiente cumque nemo id quos!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi, saepe hic esse maxime laboriosam, nam ratione natus aliquid iusto rem. Atque, minima unde natus sapiente cumque nemo id quos!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Bottom -->
+        <div id="about-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/about/about.png" alt="About Us" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="vertical-heading">
+                        <h5>What We Do</h5>
+                        <h2>Our <strong>Services</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <i class="fa fa-laptop fa-4x"></i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, minima unde natus sapiente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <i class="fa fa-mobile fa-4x"></i>
+                        <h3>App Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, minima unde natus sapiente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-item text-center">
+                        <i class="fa fa-search fa-4x"></i>
+                        <h3>SEO Optimization</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, minima unde natus sapiente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats" class="bg-parallax">
+        <div id="stats-cover">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-item">
+                            <i class="fa fa-cloud-download fa-4x"></i>
+                            <h3 class="counter">1500</h3>
+                            <p>Downloads</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-item">
+                            <i class="fa fa-heart-o fa-4x"></i>
+                            <h3 class="counter">3500</h3>
+                            <p>Likes</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-item">
+                            <i class="fa fa-check fa-4x"></i>
+                            <h3 class="counter">1200</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="stats-item">
+                            <i class="fa fa-star-o fa-4x"></i>
+                            <h3 class="counter">3200</h3>
+                            <p>Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container-fluid no-gutters">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="vertical-heading">
+                        <h5>Our Work</h5>
+                        <h2>Our <strong>Portfolio</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/001.jpg" alt="portfolio 01" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/002.jpg" alt="portfolio 02" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/003.jpg" alt="portfolio 03" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/004.jpg" alt="portfolio 04" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/005.jpg" alt="portfolio 05" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/006.jpg" alt="portfolio 06" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/007.jpg" alt="portfolio 07" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/008.jpg" alt="portfolio 08" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="vertical-heading">
+                        <h5>Who We Are</h5>
+                        <h2>Meet Our <strong>Team</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="img/team/team-1.jpg" alt="team 01" class="img-fluid rounded-circle">
+                        <div class="team-member-info">
+                            <h3>Jhon Doe</h3>
+                            <p>CEO & Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="img/team/team-2.jpg" alt="team 02" class="img-fluid rounded-circle">
+                        <div class="team-member-info">
+                            <h3>Jane Doe</h3>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member text-center">
+                        <img src="img/team/team-3.jpg" alt="team 03" class="img-fluid rounded-circle">
+                        <div class="team-member-info">
+                            <h3>Steve Smith</h3>
+                            <p>Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="vertical-heading">
+                        <h5>What Our Customers Say</h5>
+                        <h2>Our <strong>Testimonials</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi, saepe hic esse maxime laboriosam, nam ratione natus aliquid iusto rem.</p>
+                        <div class="testimonial-author">
+                            <img src="img/testimonial/client-1.jpg" alt="client 01" class="img-fluid rounded-circle">
+                            <div class="author-info">
+                                <h3>Jhon Doe</h3>
+                                <p>CEO & Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi, saepe hic esse maxime laboriosam, nam ratione natus aliquid iusto rem.</p>
+                        <div class="testimonial-author">
+                            <img src="img/testimonial/client-2.jpg" alt="client 02" class="img-fluid rounded-circle">
+                            <div class="author-info">
+                                <h3>Jane Doe</h3>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients -->
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="vertical-heading">
+                        <h5>Happy Clients</h5>
+                        <h2>Our <strong>Clients</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="clients-list" class="text-center">
+                        <img src="img/client/client-1.png" alt="client" class="img-fluid">
+                        <img src="img/client/client-2.png" alt="client" class="img-fluid">
+                        <img src="img/client/client-3.png" alt="client" class="img-fluid">
+                        <img src="img/client/client-4.png" alt="client" class="img-fluid">
+                        <img src="img/client/client-5.png" alt="client" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="vertical-heading">
+                        <h5>Latest News</h5>
+                        <h2>Our <strong>Blog</strong></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="blog-post">
+                        <div class="blog-post-img">
+                            <img src="img/tech/about-us-bg.jpg" alt="blog post" class="img-fluid">
+                        </div>
+                        <div class="blog-post-info">
+                            <h3>How to create a professional website</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, minima unde natus sapiente.</p>
+                            <a href="#" class="btn btn-general btn-yellow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-post">
+                        <div class="blog-post-img">
+                            <img src="img/tech/tech-quote.jpg" alt="blog post" class="img-fluid">
+                        </div>
+                        <div class="blog-post-info">
+                            <h3>The future of web development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, minima unde natus sapiente.</p>
+                            <a href="#" class="btn btn-general btn-yellow">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="contact-left">
+                        <div class="vertical-heading">
+                            <h5>Get In Touch</h5>
+                            <h2>Contact <strong>Us</strong></h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est modi, saepe hic esse maxime laboriosam, nam ratione natus aliquid iusto rem.</p>
+                        <div id="contact-info">
+                            <div class="contact-info-item">
+                                <i class="fa fa-map-marker"></i>
+                                <p>123 Street, New York, USA</p>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fa fa-phone"></i>
+                                <p>+1 234 567 890</p>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fa fa-envelope"></i>
+                                <p>info@creativewebsite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="contact-right">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                            </div>
+                            <div id="submit-btn">
+                                <a class="btn btn-lg btn-general btn-yellow" href="#" role="button">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2023 <span>Creative Website</span>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap/bootstrap.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
-
 </html>
-
